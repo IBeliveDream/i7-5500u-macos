@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACPI</key>
+	<dict>
+		<key>AutoMerge</key>
+		<true/>
+		<key>DSDT</key>
+		<dict>
+			<key>Debug</key>
+			<false/>
+			<key>DropOEM_DSM</key>
+			<false/>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Change OSID to XSID</string>
+					<key>Comment-Find</key>
+					<string>OSID 4F534944</string>
+					<key>Comment-Replace</key>
+					<string>XSID 58534944</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					T1NJRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNJRA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
+					<key>Comment-Find</key>
+					<string>_OSI 5F4F5349</string>
+					<key>Comment-Replace</key>
+					<string>XOSI 584F5349</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change _DSM to XDSM</string>
+					<key>Comment-Find</key>
+					<string>_DSM 5F44534D</string>
+					<key>Comment-Replace</key>
+					<string>XDSM 5844534D</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change EC0 to EC</string>
+					<key>Comment-Find</key>
+					<string>EC0 4543305F</string>
+					<key>Comment-Replace</key>
+					<string>EC 45435F5F</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change HECI to IMEI, optionally pair with SSDT-IMEI.aml</string>
+					<key>Comment-Find</key>
+					<string>HECI 48454349</string>
+					<key>Comment-Replace</key>
+					<string>IMEI 494D4549</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SEVDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change GFX0 to IGPU, optionally pair with SSDT-IGPU.aml</string>
+					<key>Comment-Find</key>
+					<string>GFX0 47465830</string>
+					<key>Comment-Replace</key>
+					<string>IGPU 49475055</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change B0D3 to HDAU, optionally pair with SSDT-HDAU.aml</string>
+					<key>Comment-Find</key>
+					<string>B0D3 42304433</string>
+					<key>Comment-Replace</key>
+					<string>HDAU 48444155</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QjBEMw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERBVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change EHC1 to EH01, optionally pair with SSDT-EH01.aml</string>
+					<key>Comment-Find</key>
+					<string>EHC1 45484331</string>
+					<key>Comment-Replace</key>
+					<string>EH01 45483031</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change EHC2 to EH02, optionally pair with SSDT-EH02.aml</string>
+					<key>Comment-Find</key>
+					<string>EHC2 45484332</string>
+					<key>Comment-Replace</key>
+					<string>EH02 45483032</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
+					<key>Comment-Find</key>
+					<string>SAT0 53415430</string>
+					<key>Comment-Replace</key>
+					<string>SATA 53415441</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_PTS, 1, N...) to ZPTS, pair with SSDT-_PTS.aml</string>
+					<key>Comment-Find</key>
+					<string>_PTS 5F505453017000</string>
+					<key>Comment-Replace</key>
+					<string>ZPTS 5A505453017000</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BUUwFwAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WlBUUwFwAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_WAK, 1, S...) to ZWAK, pair with SSDT-_WAK.aml</string>
+					<key>Comment-Find</key>
+					<string>_WAK 5F57414B095038</string>
+					<key>Comment-Replace</key>
+					<string>ZWAK 5A57414B095038</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwlQOA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwlQOA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (XWAK, 0, S...) to XWAZ, pair with SSDT-XWAK.aml</string>
+					<key>Comment-Find</key>
+					<string>XWAK 5857414B08A019</string>
+					<key>Comment-Replace</key>
+					<string>XWAZ 5857415A08A019</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WFdBSwigGQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFdBWgigGQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (XSEL, 0, S...) to XSEZ, pair with SSDT-XSEL.aml</string>
+					<key>Comment-Find</key>
+					<string>XSEL 5853454C08A044</string>
+					<key>Comment-Replace</key>
+					<string>XSEZ 5853455A08A044</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WFNFTAigRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNFWgigRA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (ESEL, 0, S...) to ESEZ, pair with SSDT-ESEL.aml</string>
+					<key>Comment-Find</key>
+					<string>ESEL 4553454C08A03F</string>
+					<key>Comment-Replace</key>
+					<string>ESEZ 4553455A08A03F</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RVNFTAigPw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RVNFWgigPw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (GPRW, 2, S...) to XPRW, pair with SSDT-GPRW.aml</string>
+					<key>Comment-Find</key>
+					<string>GPRW 475052570A7068</string>
+					<key>Comment-Replace</key>
+					<string>XPRW 585052570A7068</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwpwaA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwpwaA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_PRW, 0, N...) to ZPRW in EH01, pair with SSDT-EH01PRW.aml</string>
+					<key>Comment-Find</key>
+					<string>_PRW 5B82493745483031085F4144520C00001D005B8050574B4502000B00015B811C50574B450044564944100040290008504D4545010006504D455301140C5F445357037068504D4545142A4750454800A00B93445649440BFFFFA400A01790504D4545504D45537001504D455386454830310A0214095F53334400A40A0214095F53344400A40A025B82422D4855424E085F414452005B82442C50523031085F4144520114185F5550430808555043411207040AFF000000A45550434114275F504C440808504C445012160111130A108100000000000000301C000000000000A4504C44505B820B50523131085F414452015B820C50523132085F4144520A025B820C50523133085F4144520A035B824E0850523134085F4144520A040653425631534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523135085F4144520A050653425632534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523136085F4144520A060653425631534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523137085F4144520A070653425632534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B820C50523138085F4144520A08141F5F50525700</string>
+					<key>Comment-Replace</key>
+					<string>ZPRW 5B82493745483031085F4144520C00001D005B8050574B4502000B00015B811C50574B450044564944100040290008504D4545010006504D455301140C5F445357037068504D4545142A4750454800A00B93445649440BFFFFA400A01790504D4545504D45537001504D455386454830310A0214095F53334400A40A0214095F53344400A40A025B82422D4855424E085F414452005B82442C50523031085F4144520114185F5550430808555043411207040AFF000000A45550434114275F504C440808504C445012160111130A108100000000000000301C000000000000A4504C44505B820B50523131085F414452015B820C50523132085F4144520A025B820C50523133085F4144520A035B824E0850523134085F4144520A040653425631534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523135085F4144520A050653425632534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523136085F4144520A060653425631534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B824E0850523137085F4144520A070653425632534447561447075844534D0C085F545F3000A04706936811130A108F70FCA57587A64BBD0CBA90A1EC72F8A24E040170996A005F545F30A018935F545F3000A009936901A411030107A106A411030100A128A016935F545F3001A00A93534447560AFFA400A103A401A10FA00D935F545F300A02A453444756A5A4005B820C50523138085F4144520A08141F5A50525700</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4JJN0VIMDEIX0FEUgwAAB0AW4BQV0tFAgAL
+					AAFbgRxQV0tFAERWSUQQAEApAAhQTUVFAQAG
+					UE1FUwEUDF9EU1cDcGhQTUVFFCpHUEVIAKAL
+					k0RWSUQL//+kAKAXkFBNRUVQTUVTcAFQTUVT
+					hkVIMDEKAhQJX1MzRACkCgIUCV9TNEQApAoC
+					W4JCLUhVQk4IX0FEUgBbgkQsUFIwMQhfQURS
+					ARQYX1VQQwgIVVBDQRIHBAr/AAAApFVQQ0EU
+					J19QTEQICFBMRFASFgEREwoQgQAAAAAAAAAw
+					HAAAAAAAAKRQTERQW4ILUFIxMQhfQURSAVuC
+					DFBSMTIIX0FEUgoCW4IMUFIxMwhfQURSCgNb
+					gk4IUFIxNAhfQURSCgQGU0JWMVNER1YURwdY
+					RFNNDAhfVF8wAKBHBpNoERMKEI9w/KV1h6ZL
+					vQy6kKHscviiTgQBcJlqAF9UXzCgGJNfVF8w
+					AKAJk2kBpBEDAQehBqQRAwEAoSigFpNfVF8w
+					AaAKk1NER1YK/6QAoQOkAaEPoA2TX1RfMAoC
+					pFNER1alpABbgk4IUFIxNQhfQURSCgUGU0JW
+					MlNER1YURwdYRFNNDAhfVF8wAKBHBpNoERMK
+					EI9w/KV1h6ZLvQy6kKHscviiTgQBcJlqAF9U
+					XzCgGJNfVF8wAKAJk2kBpBEDAQehBqQRAwEA
+					oSigFpNfVF8wAaAKk1NER1YK/6QAoQOkAaEP
+					oA2TX1RfMAoCpFNER1alpABbgk4IUFIxNghf
+					QURSCgYGU0JWMVNER1YURwdYRFNNDAhfVF8w
+					AKBHBpNoERMKEI9w/KV1h6ZLvQy6kKHscvii
+					TgQBcJlqAF9UXzCgGJNfVF8wAKAJk2kBpBED
+					AQehBqQRAwEAoSigFpNfVF8wAaAKk1NER1YK
+					/6QAoQOkAaEPoA2TX1RfMAoCpFNER1alpABb
+					gk4IUFIxNwhfQURSCgcGU0JWMlNER1YURwdY
+					RFNNDAhfVF8wAKBHBpNoERMKEI9w/KV1h6ZL
+					vQy6kKHscviiTgQBcJlqAF9UXzCgGJNfVF8w
+					AKAJk2kBpBEDAQehBqQRAwEAoSigFpNfVF8w
+					AaAKk1NER1YK/6QAoQOkAaEPoA2TX1RfMAoC
+					pFNER1alpABbggxQUjE4CF9BRFIKCBQfX1BS
+					VwA=
+					</data>
+					<key>Replace</key>
+					<data>
+					W4JJN0VIMDEIX0FEUgwAAB0AW4BQV0tFAgAL
+					AAFbgRxQV0tFAERWSUQQAEApAAhQTUVFAQAG
+					UE1FUwEUDF9EU1cDcGhQTUVFFCpHUEVIAKAL
+					k0RWSUQL//+kAKAXkFBNRUVQTUVTcAFQTUVT
+					hkVIMDEKAhQJX1MzRACkCgIUCV9TNEQApAoC
+					W4JCLUhVQk4IX0FEUgBbgkQsUFIwMQhfQURS
+					ARQYX1VQQwgIVVBDQRIHBAr/AAAApFVQQ0EU
+					J19QTEQICFBMRFASFgEREwoQgQAAAAAAAAAw
+					HAAAAAAAAKRQTERQW4ILUFIxMQhfQURSAVuC
+					DFBSMTIIX0FEUgoCW4IMUFIxMwhfQURSCgNb
+					gk4IUFIxNAhfQURSCgQGU0JWMVNER1YURwdY
+					RFNNDAhfVF8wAKBHBpNoERMKEI9w/KV1h6ZL
+					vQy6kKHscviiTgQBcJlqAF9UXzCgGJNfVF8w
+					AKAJk2kBpBEDAQehBqQRAwEAoSigFpNfVF8w
+					AaAKk1NER1YK/6QAoQOkAaEPoA2TX1RfMAoC
+					pFNER1alpABbgk4IUFIxNQhfQURSCgUGU0JW
+					MlNER1YURwdYRFNNDAhfVF8wAKBHBpNoERMK
+					EI9w/KV1h6ZLvQy6kKHscviiTgQBcJlqAF9U
+					XzCgGJNfVF8wAKAJk2kBpBEDAQehBqQRAwEA
+					oSigFpNfVF8wAaAKk1NER1YK/6QAoQOkAaEP
+					oA2TX1RfMAoCpFNER1alpABbgk4IUFIxNghf
+					QURSCgYGU0JWMVNER1YURwdYRFNNDAhfVF8w
+					AKBHBpNoERMKEI9w/KV1h6ZLvQy6kKHscvii
+					TgQBcJlqAF9UXzCgGJNfVF8wAKAJk2kBpBED
+					AQehBqQRAwEAoSigFpNfVF8wAaAKk1NER1YK
+					/6QAoQOkAaEPoA2TX1RfMAoCpFNER1alpABb
+					gk4IUFIxNwhfQURSCgcGU0JWMlNER1YURwdY
+					RFNNDAhfVF8wAKBHBpNoERMKEI9w/KV1h6ZL
+					vQy6kKHscviiTgQBcJlqAF9UXzCgGJNfVF8w
+					AKAJk2kBpBEDAQehBqQRAwEAoSigFpNfVF8w
+					AaAKk1NER1YK/6QAoQOkAaEPoA2TX1RfMAoC
+					pFNER1alpABbggxQUjE4CF9BRFIKCBQfWlBS
+					VwA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_PRW, 0, N...) to ZPRW in XHC, pair with SSDT-XHCPRW.aml</string>
+					<key>Comment-Find</key>
+					<string>_PRW 1042B02E5F53425F504349305B8245AF5848435F085F4144520C000014005B805850525402000B00015B814F065850525400445649441000401F000B53574149010014000C5341495002001200401644304433020006504D4545010006504D455301004019000D4D573133014D5731340100110020000D4D423133014D42313401001100400E5052325F205052324D205052335F205052334D20141F5F50525700</string>
+					<key>Comment-Replace</key>
+					<string>ZPRW 1042B02E5F53425F504349305B8245AF5848435F085F4144520C000014005B805850525402000B00015B814F065850525400445649441000401F000B53574149010014000C5341495002001200401644304433020006504D4545010006504D455301004019000D4D573133014D5731340100110020000D4D423133014D42313401001100400E5052325F205052324D205052335F205052334D20141F5A50525700</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					EEKwLl9TQl9QQ0kwW4JFr1hIQ18IX0FEUgwA
+					ABQAW4BYUFJUAgALAAFbgU8GWFBSVABEVklE
+					EABAHwALU1dBSQEAFAAMU0FJUAIAEgBAFkQw
+					RDMCAAZQTUVFAQAGUE1FUwEAQBkADU1XMTMB
+					TVcxNAEAEQAgAA1NQjEzAU1CMTQBABEAQA5Q
+					UjJfIFBSMk0gUFIzXyBQUjNNIBQfX1BSVwA=
+					</data>
+					<key>Replace</key>
+					<data>
+					EEKwLl9TQl9QQ0kwW4JFr1hIQ18IX0FEUgwA
+					ABQAW4BYUFJUAgALAAFbgU8GWFBSVABEVklE
+					EABAHwALU1dBSQEAFAAMU0FJUAIAEgBAFkQw
+					RDMCAAZQTUVFAQAGUE1FUwEAQBkADU1XMTMB
+					TVcxNAEAEQAgAA1NQjEzAU1CMTQBABEAQA5Q
+					UjJfIFBSMk0gUFIzXyBQUjNNIBQfWlBSVwA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q1C, 0, N...) to XQ1C, pair with SSDT-KBBR.aml</string>
+					<key>Comment-Find</key>
+					<string>_Q1C 5F51314300700A</string>
+					<key>Comment-Replace</key>
+					<string>XQ1C 5851314300700A</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExQwBwCg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExQwBwCg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q1D, 0, N...) to XQ1D, pair with SSDT-KBBR.aml</string>
+					<key>Comment-Find</key>
+					<string>_Q1D 5F51314400700A</string>
+					<key>Comment-Replace</key>
+					<string>XQ1D 5851314400700A</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExRABwCg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExRABwCg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_STA, 0, N...) to XSTA in HPET, pair with SSDT-HPET.aml</string>
+					<key>Comment-Find</key>
+					<string>_STA 5B82460948504554085F4849440C41D00103085F55494400084255463011110A0E860900010000D0FE00040000790014115F53544100</string>
+					<key>Comment-Replace</key>
+					<string>XSTA 5B82460948504554085F4849440C41D00103085F55494400084255463011110A0E860900010000D0FE00040000790014115853544100</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4JGCUhQRVQIX0hJRAxB0AEDCF9VSUQACEJV
+					RjAREQoOhgkAAQAA0P4ABAAAeQAUEV9TVEEA
+					</data>
+					<key>Replace</key>
+					<data>
+					W4JGCUhQRVQIX0hJRAxB0AEDCF9VSUQACEJV
+					RjAREQoOhgkAAQAA0P4ABAAAeQAUEVhTVEEA
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_CRS, 0, S...) to XCRS in HPET, pair with SSDT-HPET.aml</string>
+					<key>Comment-Find</key>
+					<string>_CRS 5B82460948504554085F4849440C41D00103085F55494400084255463011110A0E860900010000D0FE00040000790014115853544100A00848504145A40A0FA4001446055F43525308</string>
+					<key>Comment-Replace</key>
+					<string>XCRS 5B82460948504554085F4849440C41D00103085F55494400084255463011110A0E860900010000D0FE00040000790014115853544100A00848504145A40A0FA4001446055843525308</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4JGCUhQRVQIX0hJRAxB0AEDCF9VSUQACEJV
+					RjAREQoOhgkAAQAA0P4ABAAAeQAUEVhTVEEA
+					oAhIUEFFpAoPpAAURgVfQ1JTCA==
+					</data>
+					<key>Replace</key>
+					<data>
+					W4JGCUhQRVQIX0hJRAxB0AEDCF9VSUQACEJV
+					RjAREQoOhgkAAQAA0P4ABAAAeQAUEVhTVEEA
+					oAhIUEFFpAoPpAAURgVYQ1JTCA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Name (_CRS, ...) to XCRS in IPIC, pair with SSDT-IPIC.aml</string>
+					<key>Comment-Find</key>
+					<string>_CRS 5B82450A49504943085F4849440B41D0085F435253</string>
+					<key>Comment-Replace</key>
+					<string>XCRS 5B82450A49504943085F4849440B41D00858435253</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4JFCklQSUMIX0hJRAtB0AhfQ1JT
+					</data>
+					<key>Replace</key>
+					<data>
+					W4JFCklQSUMIX0hJRAtB0AhYQ1JT
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_STA, 0, N...) to XSTA in MATH, pair with SSDT-MATH.aml</string>
+					<key>Comment-Find</key>
+					<string>_STA 5B823B4D415448085F4849440C41D00C04085F43525311100A0D4701F000F0000101220020790014155F53544100</string>
+					<key>Comment-Replace</key>
+					<string>XSTA 5B823B4D415448085F4849440C41D00C04085F43525311100A0D4701F000F0000101220020790014155853544100</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4I7TUFUSAhfSElEDEHQDAQIX0NSUxEQCg1H
+					AfAA8AABASIAIHkAFBVfU1RBAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					W4I7TUFUSAhfSElEDEHQDAQIX0NSUxEQCg1H
+					AfAA8AABASIAIHkAFBVYU1RBAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Name (_CRS, ...) to XCRS in MATH, pair with SSDT-MATH.aml</string>
+					<key>Comment-Find</key>
+					<string>_CRS 5B823B4D415448085F4849440C41D00C04085F435253</string>
+					<key>Comment-Replace</key>
+					<string>XCRS 5B823B4D415448085F4849440C41D00C040858435253</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4I7TUFUSAhfSElEDEHQDAQIX0NSUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					W4I7TUFUSAhfSElEDEHQDAQIWENSUw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Name (_CRS, ...) to XCRS in RTC, pair with SSDT-RTC.aml</string>
+					<key>Comment-Find</key>
+					<string>_CRS 5B82255254435F085F4849440C41D00B00085F435253</string>
+					<key>Comment-Replace</key>
+					<string>XCRS 5B82255254435F085F4849440C41D00B000858435253</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4IlUlRDXwhfSElEDEHQCwAIX0NSUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					W4IlUlRDXwhfSElEDEHQCwAIWENSUw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Name (_CRS, ...) to XCRS in TIMR, pair with SSDT-TIMR.aml</string>
+					<key>Comment-Find</key>
+					<string>_CRS 5B822D54494D52085F4849440C41D00100085F435253</string>
+					<key>Comment-Replace</key>
+					<string>XCRS 5B822D54494D52085F4849440C41D001000858435253</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					W4ItVElNUghfSElEDEHQAQAIX0NSUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					W4ItVElNUghfSElEDEHQAQAIWENSUw==
+					</data>
+				</dict>
+			</array>
+		</dict>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+		</array>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>EnableC2</key>
+			<false/>
+			<key>EnableC4</key>
+			<false/>
+			<key>EnableC6</key>
+			<false/>
+			<key>EnableC7</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
+			<key>NoOemTableId</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>Boot</key>
+	<dict>
+		<key>Debug</key>
+		<false/>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+		<key>NeverHibernate</key>
+		<true/>
+		<key>Secure</key>
+		<false/>
+		<key>Timeout</key>
+		<integer>0</integer>
+	</dict>
+	<key>Devices</key>
+	<dict>
+		<key>Inject</key>
+		<false/>
+		<key>LANInjection</key>
+		<false/>
+		<key>USB</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+		</array>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
+		<key>Scan</key>
+		<true/>
+		<key>Theme</key>
+		<string>mac</string>
+	</dict>
+	<key>Graphics</key>
+	<dict>
+		<key>Inject</key>
+		<dict>
+			<key>ATI</key>
+			<false/>
+			<key>Intel</key>
+			<false/>
+			<key>NVidia</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>KernelAndKextPatches</key>
+	<dict>
+		<key>AppleIntelCPUPM</key>
+		<false/>
+		<key>AppleRTC</key>
+		<false/>
+		<key>Debug</key>
+		<false/>
+		<key>DellSMBIOSPatch</key>
+		<false/>
+		<key>KernelCpu</key>
+		<false/>
+		<key>KernelLapic</key>
+		<false/>
+		<key>KernelPm</key>
+		<true/>
+		<key>KernelXCPM</key>
+		<false/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB 10.13.6+ by PMHeart</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g32IDw+DpwQAAA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g32ID5CQkJCQkA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch #1/2 10.15.x (credit DalianSky)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g/sPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch #2/2 10.15.x (credit DalianSky)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g/kPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/k/Dw==
+				</data>
+			</dict>
+		</array>
+		<key>PanicNoKextDump</key>
+		<false/>
+	</dict>
+	<key>RtVariables</key>
+	<dict>
+		<key>BooterConfig</key>
+		<string>0x0</string>
+		<key>CsrActiveConfig</key>
+		<string>0x0</string>
+		<key>MLB</key>
+		<string>C02644404GUG91QFB</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
+	</dict>
+	<key>SMBIOS</key>
+	<dict>
+		<key>ProductName</key>
+		<string>MacBookAir7,2</string>
+		<key>Trust</key>
+		<true/>
+	</dict>
+	<key>SystemParameters</key>
+	<dict>
+		<key>InjectKexts</key>
+		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
+		<key>NoCaches</key>
+		<false/>
+	</dict>
+</dict>
+</plist>
