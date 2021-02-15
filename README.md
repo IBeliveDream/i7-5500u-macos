@@ -5,8 +5,7 @@
 https://blog.daliansky.net/WeChat-First-macOS-Catalina-10.15.7-19H2-official-version-Clover-5122-OC-WEPE-supports-both-INTEL-and-AMD-original-images.html
 64g u盘 安装的 macOS Catalina 10.15.7(19H15) Installer for Clover 5126 and OC 0.6.3 and PE 32G
 
-镜像 https://cloud.189.cn/t/ZJRbYzFrIRZz（访问码：f88h）
-https://cloud.189.cn/t/7ZveuuuYfIjm（访问码：cx5x）
+镜像上面黑果小兵自提。
 ，
 目前碰到的问题， 
 * 1.板载网卡，无论有线还是无线全部无效， 
